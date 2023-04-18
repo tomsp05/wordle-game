@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AED5D0C29EEB3CD002BBB05 /* GradientProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED5D0B29EEB3CD002BBB05 /* GradientProfilePicture.swift */; };
 		E203C2B4296EB77A008A6770 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203C2B3296EB77A008A6770 /* TabModel.swift */; };
 		E203C2B9296EB78C008A6770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203C2B8296EB78C008A6770 /* HomeView.swift */; };
 		E203C2BA296EB78C008A6770 /* WordleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E203C2B7296EB78C008A6770 /* WordleView.swift */; };
@@ -60,29 +61,10 @@
 		E27FF9782972F6850065D63B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E27FF9772972F6850065D63B /* FirebaseStorageCombine-Community */; };
 		E27FF97A2972FBB10065D63B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E27FF9792972FBB00065D63B /* GoogleService-Info.plist */; };
 		E2A1D9AA2970C4DE00DBDB58 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1D9A92970C4DD00DBDB58 /* WidgetKit.framework */; };
-		E2A1D9B02970C69800DBDB58 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1D9A92970C4DD00DBDB58 /* WidgetKit.framework */; };
-		E2A1D9B22970C69800DBDB58 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A1D9B12970C69800DBDB58 /* SwiftUI.framework */; };
-		E2A1D9B52970C69800DBDB58 /* widgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9B42970C69800DBDB58 /* widgetsBundle.swift */; };
-		E2A1D9B72970C69800DBDB58 /* widgetsLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9B62970C69800DBDB58 /* widgetsLiveActivity.swift */; };
-		E2A1D9B92970C69800DBDB58 /* widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9B82970C69800DBDB58 /* widgets.swift */; };
-		E2A1D9BC2970C69B00DBDB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A1D9BB2970C69B00DBDB58 /* Assets.xcassets */; };
-		E2A1D9BE2970C69B00DBDB58 /* widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9BA2970C69800DBDB58 /* widgets.intentdefinition */; };
 		E2A1D9BF2970C69B00DBDB58 /* widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9BA2970C69800DBDB58 /* widgets.intentdefinition */; };
-		E2A1D9C22970C69B00DBDB58 /* widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E2E9081D29730EE000058A31 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9081C29730EDF00058A31 /* GradientText.swift */; };
 		E2E9081F2973170400058A31 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9081E2973170400058A31 /* ProfileView.swift */; };
-		E2E908232973334400058A31 /* GradientProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E908222973334400058A31 /* GradientProfilePicture.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E2A1D9C02970C69B00DBDB58 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E223AE4F296EB6D500875699 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2A1D9AE2970C69800DBDB58;
-			remoteInfo = widgetsExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E2A1D9C62970C69B00DBDB58 /* Embed Foundation Extensions */ = {
@@ -91,7 +73,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E2A1D9C22970C69B00DBDB58 /* widgetsExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9AED5D0B29EEB3CD002BBB05 /* GradientProfilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientProfilePicture.swift; sourceTree = "<group>"; };
 		E203C2B3296EB77A008A6770 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		E203C2B5296EB78C008A6770 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E203C2B7296EB78C008A6770 /* WordleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleView.swift; sourceTree = "<group>"; };
@@ -128,7 +110,6 @@
 		E27EFB86297453EB00342F9E /* HomescreenGradientProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenGradientProfilePicture.swift; sourceTree = "<group>"; };
 		E27FF9792972FBB00065D63B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2A1D9A92970C4DD00DBDB58 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/WidgetKit.framework; sourceTree = DEVELOPER_DIR; };
-		E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A1D9B12970C69800DBDB58 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E2A1D9B42970C69800DBDB58 /* widgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetsBundle.swift; sourceTree = "<group>"; };
 		E2A1D9B62970C69800DBDB58 /* widgetsLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widgetsLiveActivity.swift; sourceTree = "<group>"; };
@@ -138,7 +119,6 @@
 		E2A1D9BD2970C69B00DBDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E9081C29730EDF00058A31 /* GradientText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
 		E2E9081E2973170400058A31 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E2E908222973334400058A31 /* GradientProfilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientProfilePicture.swift; path = "../../../../Downloads/Advanced SwiftUI - Resources-2/Completed Project/Advanced SwiftUI/Views/GradientProfilePicture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,15 +157,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2A1D9AC2970C69800DBDB58 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2A1D9B22970C69800DBDB58 /* SwiftUI.framework in Frameworks */,
-				E2A1D9B02970C69800DBDB58 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -200,7 +171,7 @@
 				E203C2B7296EB78C008A6770 /* WordleView.swift */,
 				E278AC2C29719065007672BD /* TextFieldIcon.swift */,
 				E2E9081E2973170400058A31 /* ProfileView.swift */,
-				E2E908222973334400058A31 /* GradientProfilePicture.swift */,
+				9AED5D0B29EEB3CD002BBB05 /* GradientProfilePicture.swift */,
 				E278AC2429716886007672BD /* ImagePicker.swift */,
 				E27EFB8029737A4900342F9E /* ProfileSettingsView.swift */,
 				E27EFB86297453EB00342F9E /* HomescreenGradientProfilePicture.swift */,
@@ -236,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				E223AE57296EB6D500875699 /* Wordle Comp3.app */,
-				E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,7 +276,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E2A1D9C12970C69B00DBDB58 /* PBXTargetDependency */,
 			);
 			name = "Wordle Comp3";
 			packageProductDependencies = (
@@ -342,23 +311,6 @@
 			productReference = E223AE57296EB6D500875699 /* Wordle Comp3.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E2A1D9AE2970C69800DBDB58 /* widgetsExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E2A1D9C32970C69B00DBDB58 /* Build configuration list for PBXNativeTarget "widgetsExtension" */;
-			buildPhases = (
-				E2A1D9AB2970C69800DBDB58 /* Sources */,
-				E2A1D9AC2970C69800DBDB58 /* Frameworks */,
-				E2A1D9AD2970C69800DBDB58 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = widgetsExtension;
-			productName = widgetsExtension;
-			productReference = E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,9 +322,6 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					E223AE56296EB6D500875699 = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					E2A1D9AE2970C69800DBDB58 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -394,7 +343,6 @@
 			projectRoot = "";
 			targets = (
 				E223AE56296EB6D500875699 /* Wordle Comp3 */,
-				E2A1D9AE2970C69800DBDB58 /* widgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -407,14 +355,6 @@
 				E223AE68296EB6D800875699 /* Preview Assets.xcassets in Resources */,
 				E223AE64296EB6D800875699 /* Assets.xcassets in Resources */,
 				E27FF97A2972FBB10065D63B /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2A1D9AD2970C69800DBDB58 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2A1D9BC2970C69B00DBDB58 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +377,6 @@
 				E2E9081D29730EE000058A31 /* GradientText.swift in Sources */,
 				E27EFB8129737A4900342F9E /* ProfileSettingsView.swift in Sources */,
 				E223AE5B296EB6D500875699 /* Wordle_Comp3App.swift in Sources */,
-				E2E908232973334400058A31 /* GradientProfilePicture.swift in Sources */,
 				E203C2B9296EB78C008A6770 /* HomeView.swift in Sources */,
 				E27EFB8329737C1800342F9E /* GradientTextField.swift in Sources */,
 				E203C2BC296EB78C008A6770 /* SettingsView.swift in Sources */,
@@ -450,30 +389,12 @@
 				E203C2C3296EB7E3008A6770 /* Animation.swift in Sources */,
 				E203C2B4296EB77A008A6770 /* TabModel.swift in Sources */,
 				E2E9081F2973170400058A31 /* ProfileView.swift in Sources */,
+				9AED5D0C29EEB3CD002BBB05 /* GradientProfilePicture.swift in Sources */,
 				E278AC2D29719065007672BD /* TextFieldIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2A1D9AB2970C69800DBDB58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2A1D9BE2970C69B00DBDB58 /* widgets.intentdefinition in Sources */,
-				E2A1D9B92970C69800DBDB58 /* widgets.swift in Sources */,
-				E2A1D9B72970C69800DBDB58 /* widgetsLiveActivity.swift in Sources */,
-				E2A1D9B52970C69800DBDB58 /* widgetsBundle.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E2A1D9C12970C69B00DBDB58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2A1D9AE2970C69800DBDB58 /* widgetsExtension */;
-			targetProxy = E2A1D9C02970C69B00DBDB58 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E223AE69296EB6D800875699 /* Debug */ = {
@@ -592,10 +513,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Wordle Comp3/Wordle_Comp3.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wordle Comp3/Preview Content\"";
-				DEVELOPMENT_TEAM = E63NY5ZD35;
+				DEVELOPMENT_TEAM = 63WMPH7ZT8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -618,7 +540,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Wordle-Comp3";
+				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Worddddddle-Comp3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -638,7 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wordle Comp3/Preview Content\"";
-				DEVELOPMENT_TEAM = E63NY5ZD35;
+				DEVELOPMENT_TEAM = 63WMPH7ZT8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -661,72 +583,13 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Wordle-Comp3";
+				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Worddddddle-Comp3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E2A1D9C42970C69B00DBDB58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E63NY5ZD35;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = widgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = widgets;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Wordle-Comp3.widgets";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E2A1D9C52970C69B00DBDB58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E63NY5ZD35;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = widgets/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = widgets;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tspeake.Wordle-Comp3.widgets";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -747,15 +610,6 @@
 			buildConfigurations = (
 				E223AE6C296EB6D800875699 /* Debug */,
 				E223AE6D296EB6D800875699 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E2A1D9C32970C69B00DBDB58 /* Build configuration list for PBXNativeTarget "widgetsExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2A1D9C42970C69B00DBDB58 /* Debug */,
-				E2A1D9C52970C69B00DBDB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
