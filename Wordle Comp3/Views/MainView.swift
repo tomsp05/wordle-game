@@ -47,7 +47,7 @@ struct MainView: View {
 
 
     #endif
-                    .animation(.easeInOut(duration: 0.25), value: selectedTab)
+                    .animation(.tabSelection, value: selectedTab)
                     .background(Color("Background"))
             }
             .edgesIgnoringSafeArea(.horizontal)

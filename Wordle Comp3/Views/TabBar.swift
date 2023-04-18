@@ -57,7 +57,7 @@ struct TabBar: View {
                                     )
                                     .frame(maxHeight: .infinity, alignment: .bottom)
                                     .ignoresSafeArea()
-        .animation(.easeInOut, value: selectedTab )
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: selectedTab )
         }
     }
 
@@ -66,7 +66,7 @@ struct TabBar: View {
                 VStack(spacing: 0) {
                     ZStack {
                         Image(systemName: item.icon)
-                            .foregroundColor(selectedTab == item.tab ? color : .gray.opacity(0.7))
+                            .foregroundColor(selectedTab == item.tab ? color : .black.opacity(0.3))
                             .font(.system(size: 22))
 
 
@@ -78,7 +78,7 @@ struct TabBar: View {
                         Text(item.text)
                             .font(.caption2)
                             .lineLimit(1)
-                            .foregroundColor(selectedTab == item.tab ? color : .gray.opacity(0.7))
+                            .foregroundColor(selectedTab == item.tab ? color : .black.opacity(0.3))
 
 
 
@@ -88,7 +88,7 @@ struct TabBar: View {
 
 
             .onTapGesture {
-                withAnimation(.easeInOut) {
+                withAnimation(.spring(response: 0.1, dampingFraction: 3)) {
                     let impact = UIImpactFeedbackGenerator(style: .light)
                           impact.impactOccurred()
                     selectedTab = item.tab

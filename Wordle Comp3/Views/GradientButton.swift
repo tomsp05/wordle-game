@@ -14,32 +14,33 @@ struct GradientButton2: View {
         Color.orange,
         Color.red,
         Color.orange
+        
+        
     ]
     
-    var buttonTitle: String
-    var buttonAction: () -> Void
-    
     var body: some View {
-        Button(action: buttonAction, label: {
+        Button(action: {
+            print("sign up")
+        }, label: {
             GeometryReader() { geometry in
                 ZStack{
                     AngularGradient(gradient:
                                         Gradient(colors: gradient1), center: .center,angle: .degrees(0))
                     .blendMode(.overlay)
-                    .blur(radius: 10.0)
+                    .blur(radius: 8.0)
                     .mask(
                         RoundedRectangle(cornerRadius: 16.0)
-                            .frame(height: 60)
-                            .frame (maxWidth: geometry.size.width - 17)
-                            .blur(radius: 10.0)
+                            .frame(height: 50)
+                            .frame (maxWidth: geometry.size.width - 16)
+                            .blur(radius: 8.0)
                     )
-                    Text(buttonTitle)
+                    Text("Sign Up")
                         .foregroundColor(Color("4"))
                         .font(.headline)
                         .frame(width: geometry.size.width - 16)
                         .frame(height: 50)
                         .background(
-                            Color("secondaryBackground")
+                            Color("tertiaryBackground")
                                 .opacity(0.9)
                         )
                         .overlay(

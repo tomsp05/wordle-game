@@ -28,9 +28,6 @@
 		E278AC2729716893007672BD /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278AC2629716892007672BD /* VisualEffectBlur.swift */; };
 		E278AC2B29719045007672BD /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278AC2A29719045007672BD /* GradientButton.swift */; };
 		E278AC2D29719065007672BD /* TextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E278AC2C29719065007672BD /* TextFieldIcon.swift */; };
-		E27EFB8129737A4900342F9E /* ProfileSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EFB8029737A4900342F9E /* ProfileSettingsView.swift */; };
-		E27EFB8329737C1800342F9E /* GradientTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EFB8229737C1800342F9E /* GradientTextField.swift */; };
-		E27EFB87297453EB00342F9E /* HomescreenGradientProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27EFB86297453EB00342F9E /* HomescreenGradientProfilePicture.swift */; };
 		E27FF9442972F6850065D63B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E27FF9432972F6850065D63B /* FirebaseAnalytics */; };
 		E27FF9462972F6850065D63B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E27FF9452972F6850065D63B /* FirebaseAnalyticsOnDeviceConversion */; };
 		E27FF9482972F6850065D63B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E27FF9472972F6850065D63B /* FirebaseAnalyticsSwift */; };
@@ -69,9 +66,6 @@
 		E2A1D9BE2970C69B00DBDB58 /* widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9BA2970C69800DBDB58 /* widgets.intentdefinition */; };
 		E2A1D9BF2970C69B00DBDB58 /* widgets.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E2A1D9BA2970C69800DBDB58 /* widgets.intentdefinition */; };
 		E2A1D9C22970C69B00DBDB58 /* widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E2E9081D29730EE000058A31 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9081C29730EDF00058A31 /* GradientText.swift */; };
-		E2E9081F2973170400058A31 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9081E2973170400058A31 /* ProfileView.swift */; };
-		E2E908232973334400058A31 /* GradientProfilePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E908222973334400058A31 /* GradientProfilePicture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,10 +116,6 @@
 		E278AC2629716892007672BD /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		E278AC2A29719045007672BD /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		E278AC2C29719065007672BD /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
-		E27EFB8029737A4900342F9E /* ProfileSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsView.swift; sourceTree = "<group>"; };
-		E27EFB8229737C1800342F9E /* GradientTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTextField.swift; sourceTree = "<group>"; };
-		E27EFB852974071F00342F9E /* Wordle-Comp3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Wordle-Comp3-Info.plist"; sourceTree = SOURCE_ROOT; };
-		E27EFB86297453EB00342F9E /* HomescreenGradientProfilePicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenGradientProfilePicture.swift; sourceTree = "<group>"; };
 		E27FF9792972FBB00065D63B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2A1D9A92970C4DD00DBDB58 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk/System/Library/Frameworks/WidgetKit.framework; sourceTree = DEVELOPER_DIR; };
 		E2A1D9AF2970C69800DBDB58 /* widgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,9 +126,6 @@
 		E2A1D9BA2970C69800DBDB58 /* widgets.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widgets.intentdefinition; sourceTree = "<group>"; };
 		E2A1D9BB2970C69B00DBDB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A1D9BD2970C69B00DBDB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2E9081C29730EDF00058A31 /* GradientText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
-		E2E9081E2973170400058A31 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E2E908222973334400058A31 /* GradientProfilePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientProfilePicture.swift; path = "../../../../Downloads/Advanced SwiftUI - Resources-2/Completed Project/Advanced SwiftUI/Views/GradientProfilePicture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,12 +185,8 @@
 				E203C2B8296EB78C008A6770 /* HomeView.swift */,
 				E203C2B5296EB78C008A6770 /* SettingsView.swift */,
 				E203C2B7296EB78C008A6770 /* WordleView.swift */,
+				E278AC2A29719045007672BD /* GradientButton.swift */,
 				E278AC2C29719065007672BD /* TextFieldIcon.swift */,
-				E2E9081E2973170400058A31 /* ProfileView.swift */,
-				E2E908222973334400058A31 /* GradientProfilePicture.swift */,
-				E278AC2429716886007672BD /* ImagePicker.swift */,
-				E27EFB8029737A4900342F9E /* ProfileSettingsView.swift */,
-				E27EFB86297453EB00342F9E /* HomescreenGradientProfilePicture.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				E278AC2629716892007672BD /* VisualEffectBlur.swift */,
+				E278AC2429716886007672BD /* ImagePicker.swift */,
 				E203C2C1296EB7E2008A6770 /* Animation.swift */,
 				E223AE72296EB6F400875699 /* Word List.swift */,
 				E223AE74296EB6F500875699 /* GridModel.swift */,
@@ -244,12 +228,8 @@
 		E223AE59296EB6D500875699 /* Wordle Comp3 */ = {
 			isa = PBXGroup;
 			children = (
-				E27EFB852974071F00342F9E /* Wordle-Comp3-Info.plist */,
 				E223AE5A296EB6D500875699 /* Wordle_Comp3App.swift */,
 				E203C2C6296EC039008A6770 /* Models */,
-				E278AC2A29719045007672BD /* GradientButton.swift */,
-				E2E9081C29730EDF00058A31 /* GradientText.swift */,
-				E27EFB8229737C1800342F9E /* GradientTextField.swift */,
 				E203C2C5296EC016008A6770 /* Views */,
 				E223AE5C296EB6D500875699 /* Persistence.swift */,
 				E223AE63296EB6D800875699 /* Assets.xcassets */,
@@ -432,14 +412,9 @@
 				E203C2C4296EB7E3008A6770 /* Observable Object.swift in Sources */,
 				E278AC2B29719045007672BD /* GradientButton.swift in Sources */,
 				E203C2BA296EB78C008A6770 /* WordleView.swift in Sources */,
-				E27EFB87297453EB00342F9E /* HomescreenGradientProfilePicture.swift in Sources */,
 				E223AE7A296EB6F600875699 /* Word List.swift in Sources */,
-				E2E9081D29730EE000058A31 /* GradientText.swift in Sources */,
-				E27EFB8129737A4900342F9E /* ProfileSettingsView.swift in Sources */,
 				E223AE5B296EB6D500875699 /* Wordle_Comp3App.swift in Sources */,
-				E2E908232973334400058A31 /* GradientProfilePicture.swift in Sources */,
 				E203C2B9296EB78C008A6770 /* HomeView.swift in Sources */,
-				E27EFB8329737C1800342F9E /* GradientTextField.swift in Sources */,
 				E203C2BC296EB78C008A6770 /* SettingsView.swift in Sources */,
 				E223AE7C296EB6F600875699 /* GridModel.swift in Sources */,
 				E223AE5D296EB6D500875699 /* Persistence.swift in Sources */,
@@ -449,7 +424,6 @@
 				E278AC2529716886007672BD /* ImagePicker.swift in Sources */,
 				E203C2C3296EB7E3008A6770 /* Animation.swift in Sources */,
 				E203C2B4296EB77A008A6770 /* TabModel.swift in Sources */,
-				E2E9081F2973170400058A31 /* ProfileView.swift in Sources */,
 				E278AC2D29719065007672BD /* TextFieldIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,7 +573,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Wordle-Comp3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Wordle!";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -608,11 +581,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -642,7 +616,6 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Wordle-Comp3-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Wordle!";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.puzzle-games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -651,11 +624,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

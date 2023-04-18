@@ -48,15 +48,11 @@ struct WordleView: View {
     @State var characters : Array = []
     @State var gridItemsNum = 1
     @State var selectedCatagory = "All Words"
-    @State var textTest = ""
-    @State var charactarsInputted = -1
-
-
     @State var randomNumber = Int.random(in: 1...wordsUsableList.count)
     @State var correctWord = ""
     @State var decidedColour: UIColor = .red
-    @FocusState private var amountIsFocused: Bool
-
+    //player stats logic
+    
     
     var color: Color = .black
     
@@ -73,8 +69,7 @@ struct WordleView: View {
         NavigationStack{
             
             ZStack {
-                color.opacity(0.2)
-                    .edgesIgnoringSafeArea(.all)
+                
                 ScrollView{
                     
                     VStack{
@@ -93,10 +88,6 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        amountIsFocused.toggle()
-                                    }
                                     
                                 }
                             }
@@ -116,10 +107,7 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        amountIsFocused.toggle()
-                                    }
+                                    
                                 }
                             }
                         }.padding(.vertical, 4)
@@ -138,10 +126,7 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        amountIsFocused.toggle()
-                                    }
+                                    
                                 }
                             }
                         }.padding(.vertical, 4)
@@ -160,10 +145,7 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        amountIsFocused.toggle()
-                                    }
+                                    
                                 }
                             }
                         }.padding(.vertical, 4)
@@ -181,10 +163,7 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        amountIsFocused.toggle()
-                                    }
+                                    
                                 }
                             }
                         }.padding(.vertical, 4)
@@ -202,40 +181,27 @@ struct WordleView: View {
                                     .background(.gray.opacity(0.1))
                                     .cornerRadius(7.5)
                                     .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 1)
-                                    .onTapGesture {
-                                        print("Pressed")
-                                        
-                                        amountIsFocused.toggle()
-                                    }
                                 }
                             }
-                        }.padding(.top, 4)
+                        }.padding(.vertical, 4)
                     }
-                    .padding(.top, 10)
-                    .padding(.bottom, 0)
+                    .padding(.vertical, 10)
+                    .padding(.bottom, 10)
                     
                     
                     
                     HStack{
-                        
-                        TextField("Type Your Guess:", text: $textBindingManager.text)
+                        TextField(textFieldPlaceholder, text: $textBindingManager.text)
                             .keyboardType(.alphabet)
                             .font(.system(size: CGFloat(model.fontSize + 2)))
-                            .focused($amountIsFocused)
-                            .foregroundColor(color.opacity(0.0))
-                            .accentColor(color.opacity(0.0))
                         
+                            .foregroundColor(color)
                             .disableAutocorrection(true)
                             .frame(height: 50)
                             .textInputAutocapitalization(.characters)
                             .multilineTextAlignment(.leading)
-                            .ignoresSafeArea(.keyboard)
-                            
-                        
-                            
-                            
                             .onSubmit {
-
+                                
                                 if textBindingManager.text.lengthOfBytes(using: .ascii) < 5 || textBindingManager.text.lengthOfBytes(using: .ascii) > 5 {
                                     print("warn user length")
                                     warnLength = true
@@ -297,7 +263,6 @@ struct WordleView: View {
                                                 showAlert.toggle()
                                             }
                                             GridItemsRow1[letterNum] = GridValue(letter: guessSplitter1(guessInt: letterNum), colour: decidedColour)
-                                                
                                             
                                             
                                         } else if gridItemsNum == 2 {
@@ -378,12 +343,9 @@ struct WordleView: View {
                                                 LastNumGuesses = model.numGuesses
                                                 print("Incorrect")
                                                 showIncorrectAlert.toggle()
-                                                
                                             }
-                                            
                                             GridItemsRow6[letterNum] = GridValue(letter: guessSplitter6(guessInt: letterNum), colour: decidedColour)
                                         }
-                                            
                                         
                                         letterNum += 1
                                         counter += 1
@@ -393,7 +355,7 @@ struct WordleView: View {
                                     textBindingManager.text = ""
                                 }
                                 
-                                    
+                                
                                 
                             }
                         Text("Enter a valid 5 letter word")
@@ -404,13 +366,8 @@ struct WordleView: View {
                             .frame(width: 80)
                             .opacity(warnLength ? 1 : 0)
                         
-                            
-                        
                     }
                     .padding(.horizontal, 40)
-                    .padding(.top, 0)
-                    
-                    
                     
                     
                     .alert(isPresented: $showAlert) {
@@ -433,16 +390,6 @@ struct WordleView: View {
                 }
                 .animation(.easeInOut, value: pressCount)
                 .navigationTitle("Unlimited Wordle")
-                .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Text("Guess: \(textBindingManager.text)")
-
-                        Spacer()
-                        Button("Close Keyboard") {
-                            amountIsFocused = false
-                        }
-                    }
-                }
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Menu() {
@@ -480,9 +427,9 @@ struct WordleView: View {
                             
                         } label: {
                             HStack{
-//                                Text("Debug Menu")
-//                                    .font(.body)
-//                                    .foregroundColor(color)
+                                Text("Debug Menu")
+                                    .font(.body)
+                                    .foregroundColor(color)
                                 Image(systemName: "ladybug.fill")
                                     .foregroundColor(color)
                                     .font(.body)
@@ -564,26 +511,24 @@ struct WordleView: View {
                     }
                     
                 }
-            
+                
             }.navigationViewStyle(StackNavigationViewStyle()
                                   
             )
             
             .alert(isPresented: $showIncorrectAlert) {
                 Alert(title: Text("Oh No!! You did not manage to get the correct word."), message: Text("The word was \(correctWord)"), dismissButton: .default(Text("New Game"), action: {
-                        averageNumGuessesCalc()
-                        mostUsedCatagoryCalc()
-                        numGamesPlayed += 1
-                        newGame()}))
+                    averageNumGuessesCalc()
+                    mostUsedCatagoryCalc()
+                    numGamesPlayed += 1
+                    newGame()}))
             }
             
-//            .alert(isPresented: $showCatagoryAlert) {
-//                Alert(title: Text("You have changed the category!"), message: Text("The category has been set to \(selectedCatagory)"), dismissButton: .default(Text("Ok"), action: {
-//                }))
-//            }
-        
+            .alert(isPresented: $showCatagoryAlert) {
+                Alert(title: Text("You have changed the category!"), message: Text("The category has been set to \(selectedCatagory)"), dismissButton: .default(Text("Ok"), action: {
+                }))
+            }
             
-        
         }
         
         func newGame(){
@@ -673,8 +618,6 @@ struct WordleView: View {
             let characters = Array(usersGuess6)
             let strings = characters.map { String($0) }
             return strings[guessInt] }
-    
-
         
         func correctWordSplitter(guessInt: Int) -> String{
             let characters = Array(correctWord)

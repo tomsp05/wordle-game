@@ -1,7 +1,4 @@
 import SwiftUI
-import FirebaseAuth
-import CoreData
-
 
 
 struct HomeView: View {
@@ -15,40 +12,16 @@ struct HomeView: View {
     @AppStorage("userLoggedIn") var userLoggedIn: Bool = false
 
     
-    @Environment(\.presentationMode) var presentationMode
-    @State private var showSettingsView: Bool = false
-    @State private var showAlertView : Bool = false
-    @State private var alertTitle: String = ""
-    @State private var alertMessage: String = ""
-    
-    @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Account.userSince, ascending: true)],
-        animation: .default
-    ) private var savedAccounts: FetchedResults<Account>
-    @State private var currentAccount: Account?
-    
-    @State private var updater: Bool = true
-    
     @EnvironmentObject var model: Model
     
     var color: Color = .black
     
-    
-
     var body: some View {
         
-        color.opacity(0.2)
-            .edgesIgnoringSafeArea(.all)
         ScrollView{
             VStack{
                 
                 VStack(spacing: 5) {
-                    
-                    
-                    
-                    
-                    
                     HStack{
                         VStack{
                             HStack(spacing: 1){
@@ -81,7 +54,7 @@ struct HomeView: View {
                         Spacer()
                     }
                     .padding(20)
-                    .background(color.opacity(0.5))
+                    .background(color.opacity(0.3))
                     .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous), style: FillStyle())
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
@@ -144,7 +117,7 @@ struct HomeView: View {
                         Spacer()
                     }
                     .padding(20)
-                    .background(color.opacity(0.5))
+                    .background(color.opacity(0.3))
                     .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous), style: FillStyle())
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
@@ -203,27 +176,12 @@ struct HomeView: View {
                         Spacer()
                     }
                     .padding(20)
-                    .background(color.opacity(0.5))
+                    .background(color.opacity(0.3))
                     .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous), style: FillStyle())
                     .padding(.horizontal, 20)
                     .padding(.vertical, 5)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
                     
                     
-
-                        .sheet(isPresented: $showSettingsView){
-                            ProfileSettingsView()
-                                .environment(\.managedObjectContext, self.viewContext
-                                )
-                                .onDisappear(){
-                                    currentAccount = savedAccounts.first!
-                                    updater.toggle()
-                                }}
                     
                     
                     
@@ -235,10 +193,5 @@ struct HomeView: View {
                 
             }
         }
-    }
-    
-    func updateCard(){
-        currentAccount = savedAccounts.first!
-        updater.toggle()
     }
 }

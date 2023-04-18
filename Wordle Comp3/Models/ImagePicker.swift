@@ -1,23 +1,30 @@
+//
+//  ImagePicker.swift
+//  Advanced SwiftUI
+//
+//  Created by Sai Kambampati on 4/3/21.
+//
+
 import SwiftUI
 
-struct ImagePicker1: UIViewControllerRepresentable {
+struct ImagePicker: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
     @Binding var image: UIImage?
 
-    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker1>) -> UIImagePickerController {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let picker = UIImagePickerController()
         picker.delegate = context.coordinator
         return picker
     }
 
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker1>) {
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker>) {
 
     }
     
     class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: ImagePicker1
+        let parent: ImagePicker
 
-        init(_ parent: ImagePicker1) {
+        init(_ parent: ImagePicker) {
             self.parent = parent
         }
         

@@ -11,7 +11,6 @@ struct TextFieldIcon: View {
     var iconName: String
     
     @Binding var currentlyEditing: Bool
-    @Binding var passedImage: UIImage?
     
     
     var gradient1: [Color] = [
@@ -49,19 +48,9 @@ struct TextFieldIcon: View {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(Color.white, lineWidth: 1)
                     .blendMode(.overlay)
-                if passedImage != nil{
-                    Image(uiImage: passedImage!)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                            .frame(width: 28, height: 28, alignment: .center)
-                            .cornerRadius(8)
-                }
-                else{
-                    Image(systemName: iconName)
-                        .foregroundColor(Color("4"))
-                        .font(.system(size: 17, weight: .medium))
-                }
-                
+                Image(systemName: iconName)
+                .foregroundColor(Color("4"))
+                .font(.system(size: 17, weight: .medium))
                 
                 
             }
@@ -74,6 +63,6 @@ struct TextFieldIcon: View {
 
 struct TextFieldIcon_Previews: PreviewProvider {
     static var previews: some View {
-        TextFieldIcon(iconName: "key.fill", currentlyEditing: .constant(true), passedImage: .constant(nil))
+        TextFieldIcon(iconName: "key.fill", currentlyEditing: .constant(true))
     }
 }
